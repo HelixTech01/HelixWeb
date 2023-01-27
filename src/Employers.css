@@ -1,0 +1,192 @@
+@counter-style symbols {
+    system: cyclic;
+    symbols: "⬇️";
+    suffix: "      ";
+  }
+  
+  @counter-style open {
+    system: cyclic;
+    symbols: "⬆️";
+    suffix: "      ";
+  }
+  
+  
+  
+  
+  
+  
+  
+  #mz-accordion,
+  #mz-accordion details,
+  #mz-accordion h1,
+  #mz-accordion ul,
+  #mz-accordion li,
+  #mz-accordion p {
+    all: unset;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #mz-accordion ul {
+    list-style: none !important;
+  }
+  
+  #mz-accordion li {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    list-style: none !important;
+  }
+  
+  #mz-accordion li:active {
+    transform: scale(0.98);
+  }
+  
+  #mz-accordion {
+    margin-bottom: 60px;
+    left: 10px;
+    top: 20px;
+    width: 67%;
+    padding: 20px;
+  }
+  
+  #mz-accordion details {
+    padding: 0px 20px;
+    left: 10px;
+    box-shadow: rgba(0, 57, 99, 0.18) 0px 7px 23px 0px;
+    width: 100%;
+    margin: 10px 0px 15px 0px;
+    border-radius: 7px;
+  }
+  
+  #mz-accordion h1 {
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill: transparent;
+    color: transparent;
+    font-size: 26pt;
+    line-height: 34pt;
+    margin: 10px -30px 40px -30px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-decoration: underline 4px #eee;
+    max-width: 500px;
+  }
+  
+  #mz-accordion summary {
+    width: 100%;
+    list-style-type: symbols;
+    list-style-position: outside;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #mz-accordion summary:hover {
+    cursor: pointer;
+  }
+  
+  #mz-accordion summary::marker {
+    color: #0078d7;
+    font-size: 16pt;
+  }
+  
+  #mz-accordion summary p {
+    position: relative;
+    width: auto;
+    flex-direction: row;
+    text-align: center;
+    font-size: 12pt;
+    line-height: 18pt;
+    font-weight: 600;
+    margin: 0;
+    padding-right: 10px;
+    color: #555;
+    user-select: none;
+  }
+  
+  #mz-accordion summary p span {
+    background: #0078d755;
+    color: #222;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-right: 6px;
+    margin-bottom: 2px;
+  }
+  
+  #mz-accordion summary p::after {
+    position: absolute;
+    display: none;
+    width: 70%;
+    height: 3px;
+    background: var(--gradient);
+    bottom: -7px;
+    border-radius: 100%;
+    content: "";
+  }
+  
+  #mz-accordion details p:nth-child(2) {
+    font-size: 10pt;
+    line-height: 20pt;
+    margin: 0;
+    padding: 0px 5px;
+    text-align: left;
+  }
+  
+  #mz-accordion details[open] {
+    padding: 20px;
+  }
+  
+  #mz-accordion details[open] summary {
+    list-style: open;
+    background: #eee;
+    margin-bottom: 15px;
+  }
+  
+  #mz-accordion details[open] summary p {
+    bottom: 5px;
+  }
+  
+  #mz-accordion details[open] summary p::after {
+    display: flex;
+  }
+  
+  @supports not (list-style-type: symbols) {
+    #mz-accordion h1 {
+      background: unset;
+      background-clip: unset;
+      -webkit-background-clip: unset;
+      color: #0077d6 !important;
+    }
+    #mz-accordion summary {
+      list-style-type: none !important;
+    }
+  }
+  
+  @media (max-width: 460px) {
+    #mz-accordion summary p {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    #mz-accordion h1 {
+      font-size: 22pt;
+      line-height: 30pt;
+    }
+  }
+  
+  @media (pointer: coarse) {
+    #mz-accordion {
+      left: unset;
+      right: 10px;
+      list-style: none !important;
+    }
+  }
+  

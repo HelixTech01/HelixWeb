@@ -1,0 +1,30 @@
+.aboutPage section.services-area.section-padding-lg.bg-white {
+    padding: 0px 0 70px !important;
+}
+
+
+/*Tablet 768 - 1024  */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    section.services-area.section-padding-lg.bg-white {
+        padding-bottom: 70px !important;
+    }
+    .about-area.section-padding-lg {
+        padding: 0px 0 !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    img.contact_dus_img {
+        margin-top: 0px;
+    }
+    img.goals-img {
+        margin-top: 0px;
+    }
+    .section-padding-lg {
+        padding: 40px 0 !important;
+    }
+    section.services-area.section-padding-lg.bg-white {
+        padding: 0px 0 40px !important;
+    }
+}

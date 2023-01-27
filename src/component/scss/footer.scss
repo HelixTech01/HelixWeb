@@ -1,0 +1,67 @@
+#footer {
+  .widget-quick-contact {
+    p,
+    a {
+      color: #fff;
+    }
+    p:hover {
+      color: #fff;
+    }
+    .fa.fa-phone {
+      transform: rotate(90deg);
+      margin-right: 5px;
+    }
+    .fa {
+      margin-right: 5px;
+    }
+  }
+
+  .contactNumber {
+    a {
+      display: block;
+    }
+    .icon {
+      width: 25px;
+      margin-right: 8px;
+    }
+  }
+
+  .QuickContactFlex {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    ul:last-child {
+      width: 300px;
+      max-width: 100%;
+    }
+  }
+}
+
+.footer-widgets .single-widget.footer-widget-about p {
+  margin-top: 25px;
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.widget-quick-links ul li a {
+  color: #fff !important;
+}
+.widget-quick-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer.logo {
+  img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-widgets .single-widget {
+    margin-top: 15px;
+  }
+  .footer-widgets .footer-widget-title {
+    margin-bottom: 10px;
+  }
+}
